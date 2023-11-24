@@ -6,7 +6,6 @@ In order to run the snake.py script, PyGame module must be installed.
 
 'pip install pygame'
 
-
 ## Introduction
 This is a simple implementation of the classic Snake game using the Pygame library in Python. The game involves controlling a snake on a window, eating fruits to grow longer, and avoiding collisions with the walls and the snake's own body.
 
