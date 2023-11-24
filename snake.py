@@ -1,8 +1,9 @@
-# importing libraries
+# 1.Import libraries --------------------
 import pygame
 import time
 import random
 
+# 2.Window setup --------------------
 snake_speed = 15
 
 # Window size
@@ -16,6 +17,7 @@ red = pygame.Color(255, 0, 0)
 green = pygame.Color(0, 255, 0)
 blue = pygame.Color(0, 0, 255)
 
+# 3.Initialisation --------------------
 # Initialising pygame
 pygame.init()
 
@@ -26,6 +28,7 @@ game_window = pygame.display.set_mode((window_x, window_y))
 # FPS (frames per second) controller
 fps = pygame.time.Clock()
 
+# 4.Define snake and fruit --------------------
 # defining snake default position
 snake_position = [100, 50]
 
@@ -46,6 +49,7 @@ fruit_spawn = True
 direction = 'RIGHT'
 change_to = direction
 
+# 5.Defining score function --------------------
 # initial score
 score = 0
 
@@ -64,7 +68,7 @@ def show_score(color, font, size):
 	# displaying text
 	game_window.blit(score_surface, score_rect)
 
-# game over function
+# 6.Game over function --------------------
 def game_over():
 
 	# creating font object my_font
@@ -93,8 +97,7 @@ def game_over():
 	# quit the program
 	quit()
 
-
-# Main Function
+# 7.Game function --------------------
 while True:
 	
 	# handling key events
